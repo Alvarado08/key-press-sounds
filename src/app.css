@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("crowd.jpeg");
+    background-size: cover;
+    color: white;
+}
+
+#container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+svg {
+    margin-left: 1rem;
+    width: 3rem;
+}
+
+#keys-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.key {
+    font-size: 2rem;
+    font-weight: bold;
+    border: .3rem solid black;
+    border-radius: .5rem;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    width: 5rem;
+    text-align: center;
+    transition: all 0.07s;
+}
+
+.playing {
+    transform: scale(1.1);
+    border-color: gold;
+}
